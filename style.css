@@ -1,0 +1,62 @@
+:root{
+    --primary-color: #0f172a;
+    --secondary-color: #111827;
+
+}
+body{
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+}
+
+#input-div{
+    background-color: var(--primary-color);
+    height: 100vh;
+    width: 50vw;
+    font-size: large;
+    color: aliceblue;
+    padding: 1rem;
+}
+
+h1, h2{
+    margin: 0%;
+    padding: 0%;
+}
+
+header{
+    padding: 2rem 0;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin: 2rem auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+input{
+    max-width: 200px;
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding: 0.5rem 1rem;
+}
+
+#check-btn{
+    display: block;
+    margin: auto;
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+    background-color: #fdba74;
+}
+
+#output{
+    background-color: var(--secondary-color);
+    height: 100vh;
+    width: 50vw;
+    font-size: xx-large;
+    text-align: center;
+    padding: 2rem;
+    padding-top: 20%;
+}
