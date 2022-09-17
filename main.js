@@ -7,13 +7,13 @@ const output = document.querySelector("#output");
 function profitOrLoss(initial, quantity, current){
     if(initial < current){
         var profit = (current - initial) * quantity;
-        var profitPercent = ((current - initial)/current) * 100;
+        var profitPercent = (profit/initial) * 100;
 
         shoMmessage(`Heyyy, the profit is ${profit} and the profit-percent is ${profitPercent.toFixed(2)}%`, 1);
     }
     else if(initial > current){
         var loss = (initial - current) * quantity;
-        var lossPercent = ((initial - current)/initial) * 100;
+        var lossPercent = (loss/initial) * 100;
 
         shoMmessage(`Heyyy, the loss is ${loss} and the loss-percent is ${lossPercent.toFixed(2)}%`, -1);
     }
