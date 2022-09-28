@@ -27,7 +27,12 @@ function calProfitOrLoss(){
     var current = Number(currentPrice.value);
     var quantity = Number(stockQuantity.value);
 
-    profitOrLoss(initial, quantity, current);
+    if(initial > 0 && current > 0 && quantity >0){
+        profitOrLoss(initial, quantity, current);
+    }
+    else{
+        shoMmessage("Please enter a positive value!", 2);
+    }
 }
 
 function shoMmessage(message, status){
